@@ -52,9 +52,9 @@ public class FXDemoController : MonoBehaviour
 
     public void NoFX()
     {
-        txtFXMode.text = "No FX";
-        turnOff_FX();
-        Debug.Log("NoFX");
+     
+        
+       
     }
 
     void turnOff_FX()

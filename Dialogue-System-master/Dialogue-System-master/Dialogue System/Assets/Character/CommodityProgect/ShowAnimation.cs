@@ -1,6 +1,6 @@
 using UnityEngine;
 using System.Collections;
-using UnityEditor;
+
 
 public class ShowAnimation : MonoBehaviour {
 
@@ -49,7 +49,6 @@ public class ShowAnimation : MonoBehaviour {
 
 	public GameObject[] Chrs;
 	public int i =0;
-	private int curi =0;
 	void ChooseChar ()
 	{
 		CurAinObjCount = i;
@@ -67,7 +66,6 @@ public class ShowAnimation : MonoBehaviour {
 	void AddAnim () 
 	{
 		ain = AinObjs [i].GetComponent<Animation>();
-		clips = AnimationUtility.GetAnimationClips (ain);
 	}
 	void PlayAnim ()
 	{

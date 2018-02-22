@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement;
 public class DialogueManager : MonoBehaviour {
 
 	public Text nameText;
@@ -38,6 +38,7 @@ public class DialogueManager : MonoBehaviour {
 		if (sentences.Count == 0)
 		{
 			EndDialogue();
+			SceneManager.LoadScene(1);
 			return;
 		}
 
